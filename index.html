@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>DukaanXpress</title>
+    <link rel="icon" type="image/jpeg" href="images/logo.jpeg">
     <style>
         *{
             padding: 0px;
@@ -20,7 +21,25 @@
             font-size: larger;
             color: white;
             text-align: center;
+            padding:10px;
+            margin:0px;
+            position: relative;
         }
+        header img
+        {
+            width: 200px;
+            height: auto;
+            vertical-align: middle;
+            position: absolute;
+            top: 10px;
+            left: 15px;
+            margin:0%;
+            background-color:white;
+            border-radius: 50%;
+            padding: 10px;
+
+        }
+    
         nav
         {
             background-color: lightskyblue;
@@ -42,10 +61,26 @@
         }
         .products 
         {
+            display: grid;
+            grid-template-columns: repeat(2,1fr);
+            gap: 15px;
+            padding: 10px;
+        }
+        .products div
+        {
             display: flex;
-            flex-wrap: wrap;
-            justify-content:center;
-            gap: 10px;
+            text-align: center;
+            flex-direction: column;
+            justify-content: flex-start;
+            padding: 20px;
+        }
+        .products img
+        {
+            width: 100%;
+            height: 250px;
+            object-fit: cover;
+            
+            border-radius: 7px;
         }
         .searchbox
         {
@@ -76,6 +111,7 @@
 </head>
 <body>
     <header>
+        <img src="images/logo.jpeg" alt="DukaanXpress LOGO">
         <h1><b>DukaanXpress⚡</b></h1>
         <h3><i>"Shop smart🛒Shop Xpress🚀"</i></h3>
     </header>
@@ -96,39 +132,46 @@
     </section>
     <section class="products">
         <div>
-            <img src="bag.jpeg" alt="martin crow jute bag" />
+            <img src=bag.jpeg" alt="martin crow jute bag" />
             <h3>MARTIN-CROW JUTE BAG UNISEX</h3>
             <h3><b>INR 999.00</b></h3>
             <button>BUY NOW</button>
         </div>
 
         <div>
-            <img src="Sneakers.jpeg" alt="asian unisex sneakers-blue" />
+            <img src=Sneakers.jpeg" alt="asian unisex sneakers-blue" />
             <h3>Asian Unisex Sneakers-Blue</h3>
             <H3><B>INR 1999.00</B></H3>
             <button>BUY NOW</button>
         </div>
         
         <div>
-            <img src="tshirts.jpeg" alt="US-POLO women's tshirt-white"/>
+            <img src=tshirts.jpeg" alt="US-POLO women's tshirt-white"/>
             <h3>US-POLO WOMEN'S T-SHIRT-WHITE</h3>
             <h3><b>INR 1299.00</b></h3>
             <button>BUY NOW</button>
         </div>
 
         <div>
-            <img src="flask.jpeg" alt="CELLO FLASKS-SET OF 4" />
+            <img src=flask.jpeg" alt="CELLO FLASKS-SET OF 4" />
             <h3><b>CELLO FLASKS-SET OF 4</b></h3>
             <h3>INR 299.00</h3>
             <button>BUY NOW</button>
         </div>
 
         <div>
-            <img src="football.jpeg" alt="PERFORMAX FOOTBALL WHITE SIZE-5"/>
+            <img src=diffuser.jpeg" alt="SYSKA AROMA diffuser"/>
+            <h3><b>SYSKA AROMA DIFFUSER FOR LIVING ROOM<br>With 7 colour RGB LIGHT</b></h3>
+            <H3>INR 999.00</H3>
+            <button>BUY NOW</button>
+        </div>
+
+        <div>
+            <img src=football.jpeg" alt="PERFORMAX FOOTBALL WHITE SIZE-5"/>
             <h3><b>PERFORMAX SYNTHETIC FOOTBALL WHITE SIZE-5</b></h3>
             <H3>INR 999.00</H3>
             <button>BUY NOW</button>
-<       </div>
+        </div>
     </section>
 
     <footer>
@@ -137,6 +180,4 @@
         
     
 </body>
-
 </html>
-
