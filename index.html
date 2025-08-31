@@ -10,24 +10,21 @@
             padding: 0px;
             margin: 0px;
         }
-        body
-        {
+        body {
             font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
             background-color: white;
         }
-        header
-        {
+        header {
             background-color:black;
             font-size: larger;
             color: white;
-            text-shadow: 15px;
+            text-shadow: 2px 2px 5px rgba(255,255,255,0.3);
             text-align: center;
             padding:10px;
             margin:0px;
             position: relative;
         }
-        header img
-        {
+        header img {
             width: 200px;
             height: auto;
             vertical-align: middle;
@@ -38,55 +35,54 @@
             background-color:white;
             border-radius: 50%;
             padding: 10px;
-
         }
     
-        nav
-        {
+        nav {
             background-color: lightcoral;
             height: 50px;
             text-align: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
         }
-        nav a
-        {
+        nav a {
             color: white;
-            font-size: 30px;
+            font-size: 20px;
             font-family: Georgia, 'Times New Roman', Times, serif;
+            margin: 0 15px;
+            text-decoration: none;
         }
-        footer
-        {
+        nav a:hover {
+            text-decoration: underline;
+        }
+        footer {
             background-color:rgb(38, 35, 35);
             color: white;
             text-align: center;
             padding: 10px;
             width: 100%;
         }
-        .products 
-        {
+        .products {
             display: grid;
             grid-template-columns: repeat(2,1fr);
             gap: 15px;
             padding: 10px;
             background-color:#86c2e0 ;
-            
         }
-        .products div
-        {
+        .products div {
             display: flex;
             text-align: center;
             flex-direction: column;
             justify-content: flex-start;
             padding: 20px;
         }
-        .products img
-        {
+        .products img {
             width: 100%;
             height: 250px;
             object-fit: contain;
             border-radius: 15px;
         }
-        .products button
-        {
+        .products button {
             margin: 10px auto;
             padding: 10px 20px;
             background-color: lightcoral;
@@ -97,36 +93,51 @@
             border-radius: 15px;
             cursor: pointer;
         }
-        .searchbox
-        {
+        .searchbox {
             display: flex;
             justify-content: center;
             align-items: center;
             background-color:#86c2e0 ;
-
+            padding: 10px;
         }
-        .searchbox input
-        {
+        .searchbox input {
             width: 600px;
             height: 55px;
-        
+            padding: 0 15px;
+            border: 2px solid lightcoral;
+            border-radius: 10px 0 0 10px;
+            font-size: 16px;
         }
-        .searchbox button
-        {
-            width: 55px;
-            height: 55px;
-            text-align: center;
-            font-size: small;
+        .searchbox input::placeholder {
+            color: gray;
+            font-style: italic;
+        }
+        .searchbox button {
+            width: 70px;
+            height: 59px;
+            border: none;
+            border-radius: 0 10px 10px 0;
+            background-color: lightcoral;
+            color: white;
+            font-size: 16px;
+            font-weight: bold;
             cursor: pointer;
         }
-        .welcome
-        {
+        .welcome {
             text-align: center;
             font-size: 50px;
             line-height: 70px;
             font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
             background-color:#86c2e0 ;
-            
+            padding: 20px;
+        }
+        @media (max-width: 768px) {
+            .products {
+                grid-template-columns: 1fr;
+            }
+            .searchbox input {
+                width: 100%;
+            }
         }
     </style>
 </head>
@@ -137,19 +148,19 @@
         <h3><i>"Shop smart🛒Shop Xpress🚀"</i></h3>
     </header>
     <nav>
-        <a href="#"> Home |</a>
-        <a href="#"> Trendy Collection🔥 |</a>
-        <a href="#"> Locate Offline Stores📍 |</a>
-        <a href="#"> Sign-in🔑</a>
+        <a href="#">Home</a>
+        <a href="#">Trendy Collection🔥</a>
+        <a href="#">Locate Offline Stores📍</a>
+        <a href="#">Sign-in🔑</a>
     </nav>
     <section class="welcome">
         <h2>WELCOME TO DukaanXpress⚡🔥</h2>
-        <P style="font-family: Arial, Helvetica, sans-serif; font-size: smaller;" ><i>Your service is our commitment💫</i> </P>
+        <p style="font-family: Arial, Helvetica, sans-serif; font-size: smaller;"><i>Your service is our commitment💫</i></p>
     </section>
 
     <section class="searchbox">
         <input type="text" placeholder="Search products here..."/>
-        <button>search🔍</button>
+        <button>Search🔍</button>
     </section>
     <section class="products">
         <div>
@@ -162,7 +173,7 @@
         <div>
             <img src="Sneakers.jpeg" alt="asian unisex sneakers-blue" />
             <h3>Asian Unisex Sneakers-Blue</h3>
-            <H3><B>INR 1999.00</B></H3>
+            <h3><b>INR 1999.00</b></h3>
             <button>BUY NOW</button>
         </div>
         
@@ -183,14 +194,14 @@
         <div>
             <img src="diffuser.jpeg" alt="SYSKA AROMA diffuser"/>
             <h3><b>SYSKA AROMA DIFFUSER FOR LIVING ROOM<br>With 7 colour RGB LIGHT</b></h3>
-            <H3>INR 999.00</H3>
+            <h3>INR 999.00</h3>
             <button>BUY NOW</button>
         </div>
 
         <div>
             <img src="football.jpeg" alt="PERFORMAX FOOTBALL WHITE SIZE-5"/>
             <h3><b>PERFORMAX SYNTHETIC FOOTBALL WHITE SIZE-5</b></h3>
-            <H3>INR 999.00</H3>
+            <h3>INR 999.00</h3>
             <button>BUY NOW</button>
         </div>
     </section>
@@ -198,10 +209,5 @@
     <footer>
         <p> For queries and support contact us at +11191919191 | Email-dukaanxpress@yahoo.com |<br> DukaanXpress©️ | ALL RIGHTS RESERVED </p>
     </footer>
-        
-    
 </body>
 </html>
-
-
-
