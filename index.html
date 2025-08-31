@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>DukaanXpress</title>
-    <link rel="icon" type="image/jpeg" href=logo.jpeg">
+    <link rel="icon" type="image/jpeg" href="images/logo.jpeg">
     <style>
         *{
             padding: 0px;
@@ -20,6 +20,7 @@
             background-color:black;
             font-size: larger;
             color: white;
+            text-shadow: 15px;
             text-align: center;
             padding:10px;
             margin:0px;
@@ -42,7 +43,7 @@
     
         nav
         {
-            background-color: lightskyblue;
+            background-color: lightcoral;
             height: 50px;
             text-align: center;
         }
@@ -50,10 +51,11 @@
         {
             color: white;
             font-size: 30px;
+            font-family: Georgia, 'Times New Roman', Times, serif;
         }
         footer
         {
-            background-color:grey;
+            background-color:rgb(38, 35, 35);
             color: white;
             text-align: center;
             padding: 10px;
@@ -65,6 +67,8 @@
             grid-template-columns: repeat(2,1fr);
             gap: 15px;
             padding: 10px;
+            background-color:#86c2e0 ;
+            
         }
         .products div
         {
@@ -78,21 +82,34 @@
         {
             width: 100%;
             height: 250px;
-            object-fit: cover;
-            
-            border-radius: 7px;
+            object-fit: contain;
+            border-radius: 15px;
+        }
+        .products button
+        {
+            margin: 10px auto;
+            padding: 10px 20px;
+            background-color: lightcoral;
+            color: white;
+            font-weight: bold;
+            font-size: large;
+            border-color: white;
+            border-radius: 15px;
+            cursor: pointer;
         }
         .searchbox
         {
             display: flex;
             justify-content: center;
             align-items: center;
-           
+            background-color:#86c2e0 ;
+
         }
         .searchbox input
         {
             width: 600px;
             height: 55px;
+        
         }
         .searchbox button
         {
@@ -100,11 +117,15 @@
             height: 55px;
             text-align: center;
             font-size: small;
+            cursor: pointer;
         }
         .welcome
         {
             text-align: center;
             font-size: 50px;
+            line-height: 70px;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            background-color:#86c2e0 ;
             
         }
     </style>
@@ -123,7 +144,7 @@
     </nav>
     <section class="welcome">
         <h2>WELCOME TO DukaanXpress⚡🔥</h2>
-        <P>your service is our commitment💫🙏</P>
+        <P style="font-family: Arial, Helvetica, sans-serif; font-size: smaller;" ><i>Your service is our commitment💫</i> </P>
     </section>
 
     <section class="searchbox">
@@ -132,42 +153,42 @@
     </section>
     <section class="products">
         <div>
-            <img src=bag.jpeg" alt="martin crow jute bag" />
+            <img src="images/bag.jpeg" alt="martin crow jute bag" />
             <h3>MARTIN-CROW JUTE BAG UNISEX</h3>
             <h3><b>INR 999.00</b></h3>
             <button>BUY NOW</button>
         </div>
 
         <div>
-            <img src=Sneakers.jpeg" alt="asian unisex sneakers-blue" />
+            <img src="images/Sneakers.jpeg" alt="asian unisex sneakers-blue" />
             <h3>Asian Unisex Sneakers-Blue</h3>
             <H3><B>INR 1999.00</B></H3>
             <button>BUY NOW</button>
         </div>
         
         <div>
-            <img src=tshirts.jpeg" alt="US-POLO women's tshirt-white"/>
+            <img src="images/tshirts.jpeg" alt="US-POLO women's tshirt-white"/>
             <h3>US-POLO WOMEN'S T-SHIRT-WHITE</h3>
             <h3><b>INR 1299.00</b></h3>
             <button>BUY NOW</button>
         </div>
 
         <div>
-            <img src=flask.jpeg" alt="CELLO FLASKS-SET OF 4" />
+            <img src="images/flask.jpeg" alt="CELLO FLASKS-SET OF 4" />
             <h3><b>CELLO FLASKS-SET OF 4</b></h3>
             <h3>INR 299.00</h3>
             <button>BUY NOW</button>
         </div>
 
         <div>
-            <img src=diffuser.jpeg" alt="SYSKA AROMA diffuser"/>
+            <img src="images/diffuser.jpeg" alt="SYSKA AROMA diffuser"/>
             <h3><b>SYSKA AROMA DIFFUSER FOR LIVING ROOM<br>With 7 colour RGB LIGHT</b></h3>
             <H3>INR 999.00</H3>
             <button>BUY NOW</button>
         </div>
 
         <div>
-            <img src=football.jpeg" alt="PERFORMAX FOOTBALL WHITE SIZE-5"/>
+            <img src="images/football.jpeg" alt="PERFORMAX FOOTBALL WHITE SIZE-5"/>
             <h3><b>PERFORMAX SYNTHETIC FOOTBALL WHITE SIZE-5</b></h3>
             <H3>INR 999.00</H3>
             <button>BUY NOW</button>
@@ -181,4 +202,3 @@
     
 </body>
 </html>
-
